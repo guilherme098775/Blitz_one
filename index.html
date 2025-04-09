@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUX Ride - Transporte Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .bg-silver {
+            background-color: #C0C0C0;
+        }
+        .bg-gold {
+            background-color: #FFD700;
+        }
+        .text-gold {
+            color: #FFD700;
+        }
+        .text-silver {
+            color: #C0C0C0;
+        }
+        .border-gold {
+            border-color: #FFD700;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-silver text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-bolt text-gold text-2xl"></i>
+                <span class="text-xl font-bold">BLITZ <span class="text-gold">ONE</span></span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-gold transition">Início</a>
+                <a href="#" class="hover:text-gold transition">Serviços</a>
+                <a href="#" class="hover:text-gold transition">Sobre</a>
+                <a href="#" class="hover:text-gold transition">Contato</a>
+            </div>
+            <button class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">TRANSPORTE <span class="text-gold">PREMIUM</span></h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Viagens de luxo com motoristas profissionais em veículos exclusivos</p>
+            <button class="bg-gold text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-yellow-500 transition">
+                SOLICITAR AGORA
+            </button>
+        </div>
+    </section>
+
+    <!-- Ride Booking -->
+    <section class="container mx-auto px-4 py-16 -mt-10">
+        <div class="bg-white rounded-xl shadow-xl p-6 max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="relative">
+                    <label class="block text-gray-700 mb-2">Origem</label>
+                    <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:ring-2 focus:ring-gold">
+                    <i class="fas fa-map-marker-alt absolute right-3 top-10 text-silver"></i>
+                </div>
+                <div class="relative">
+                    <label class="block text-gray-700 mb-2">Destino</label>
+                    <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:ring-2 focus:ring-gold">
+                    <i class="fas fa-flag absolute right-3 top-10 text-silver"></i>
+                </div>
+                <button class="bg-gold text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition h-12 mt-6">
+                    VER DISPONIBILIDADE
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="bg-silver py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">NOSSOS <span class="text-gold">SERVIÇOS</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-car text-2xl text-gold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">LUX Standard</h3>
+                    <p class="text-gray-600">Veículos premium com motoristas particulares</p>
+                    <div class="mt-4 text-gold font-bold">A partir de R$ 50,00</div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-gem text-2xl text-gold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">LUX Black</h3>
+                    <p class="text-gray-600">Carros executivos de alto padrão</p>
+                    <div class="mt-4 text-gold font-bold">A partir de R$ 80,00</div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-crown text-2xl text-gold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">LUX VIP</h3>
+                    <p class="text-gray-600">Veículos de luxo com motoristas particulares</p>
+                    <div class="mt-4 text-gold font-bold">A partir de R$ 120,00</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download -->
+    <section class="py-16 bg-gradient-to-r from-gray-800 to-gray-900 text-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">BAIXE O APP <span class="text-gold">BLITZ ONE</span></h2>
+                <p class="text-xl mb-6">Solicite viagens premium diretamente do seu smartphone</p>
+                <div class="flex space-x-4">
+                    <button class="bg-black text-white px-6 py-3 rounded-lg flex items-center">
+                        <i class="fab fa-apple text-2xl mr-2"></i>
+                        <div class="text-left">
+                            <div class="text-xs">Disponível na</div>
+                            <div class="font-bold">App Store</div>
+                        </div>
+                    </button>
+                    <button class="bg-black text-white px-6 py-3 rounded-lg flex items-center">
+                        <i class="fab fa-google-play text-2xl mr-2"></i>
+                        <div class="text-left">
+                            <div class="text-xs">Disponível no</div>
+                            <div class="font-bold">Google Play</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://via.placeholder.com/300x500/333333/FFFFFF?text=BLITZ+ONE" alt="App Preview" class="rounded-lg shadow-xl w-full max-w-xs md:max-w-none">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-bolt text-gold mr-2"></i>
+                        BLITZ ONE
+                    </h3>
+                    <p class="text-gray-400">Transporte premium com excelência e conforto.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-gold">EMPRESA</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Sobre nós</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Carreiras</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Imprensa</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-gold">PRODUTOS</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">LUX Standard</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">LUX Black</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">LUX VIP</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-gold">CONTATO</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-gold mr-2"></i>
+                            (11) 4002-8922
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-gold mr-2"></i>
+                            contato@luxride.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-400 mb-4 md:mb-0">
+                    © 2023 BLITZ ONE. Todos os direitos reservados.
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('nav button');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'md:hidden hidden bg-silver absolute w-full left-0 top-16 z-50 p-4';
+            mobileMenu.innerHTML = `
+                <a href="#" class="block py-2 hover:text-gold">Início</a>
+                <a href="#" class="block py-2 hover:text-gold">Serviços</a>
+                <a href="#" class="block py-2 hover:text-gold">Sobre</a>
+                <a href="#" class="block py-2 hover:text-gold">Contato</a>
+            `;
+            document.querySelector('nav').appendChild(mobileMenu);
+            
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Adjust text sizes for mobile
+            if (window.innerWidth < 768) {
+                document.querySelectorAll('h1, h2, h3').forEach(el => {
+                    const size = window.getComputedStyle(el).fontSize;
+                    el.style.fontSize = `calc(${size} * 0.9)`;
+                });
+            }
+        });
+    </script>
+</body>
+</html>
